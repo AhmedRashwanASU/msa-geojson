@@ -10,27 +10,24 @@ http://opendata.dc.gov/
 
 people to use them as alternatives to regular Census tract maps to improve the visualization of demographic data in urban environments.
 1- Load the requierd libraries as below 
-library(httr)
-library(jsonlite)
-library( geojsonio )   # read shapefiles
-library( sp )          # work with shapefiles
-library( sf )          # work with shapefiles - simple features format
-library( tmap )        # theme maps
-library( dplyr )       # data wrangling
-library( pander )      # nice tables 
-
-library( DT )
-library( knitr )
-library( stargazer )
-
-
-# maps
-library( ggmap )
-library( leaflet )
-library( viridis )
-library(tidycensus)
-library( pals )
-library( cartogram )  # spatial maps w/ tract size bias reduction
+* library(httr)
+* library(jsonlite)
+* library( geojsonio )   # read shapefiles
+* ibrary( sp )          # work with shapefiles
+* library( sf )          # work with shapefiles - simple features format
+* library( tmap )        # theme maps
+* library( dplyr )       # data wrangling
+* library( pander )      # nice tables 
+* library( DT )
+* library( knitr )
+* library( stargazer )
+### maps libraries 
+* library( ggmap )
+* library( leaflet )
+* library( viridis )
+* library(tidycensus)
+* library( pals )
+* library( cartogram )  # spatial maps w/ tract size bias reduction
 
 ## Datasets
 
