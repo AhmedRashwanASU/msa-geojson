@@ -4,16 +4,16 @@
 
 ## Source
 
-http://opendata.dc.gov/
+https://raw.githubusercontent.com/DS4PS/cpp-529-master/master/data/cbsatocountycrosswalk.csv
 
 ## Process
 
 people to use them as alternatives to regular Census tract maps to improve the visualization of demographic data in urban environments.
-1- Load the requierd libraries as below 
+### 1- Load the requierd libraries as below 
 * library(httr)
 * library(jsonlite)
 * library( geojsonio )   # read shapefiles
-* ibrary( sp )          # work with shapefiles
+* ibrary( sp )           # work with shapefiles
 * library( sf )          # work with shapefiles - simple features format
 * library( tmap )        # theme maps
 * library( dplyr )       # data wrangling
@@ -28,6 +28,16 @@ people to use them as alternatives to regular Census tract maps to improve the v
 * library(tidycensus)
 * library( pals )
 * library( cartogram )  # spatial maps w/ tract size bias reduction
+
+### 2 - Load the census_key as below 
+* census_key <- "---"
+* census_api_key(census_key)
+
+### 3- Load your geoJson file for any state for example (ALASKA) 
+
+* github.url <- "https://raw.githubusercontent.com/AhmedRashwanASU/msa-geojson/main/ALASKA_dorling.geojson"
+* ALASKA <- geojson_read( x=github.url,  what="sp" )
+* plot(ALASKA)
 
 ## Datasets
 
