@@ -16,9 +16,6 @@ people to use them as alternatives to regular Census tract maps to improve the v
 * ibrary( sp )           # work with shapefiles
 * library( sf )          # work with shapefiles - simple features format
 * library( tmap )        # theme maps
-* library( dplyr )       # data wrangling
-* library( pander )      # nice tables 
-* library( DT )
 * library( knitr )
 * library( stargazer )
 ### maps libraries 
